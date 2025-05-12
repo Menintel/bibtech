@@ -10,10 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-<<<<<<< HEAD
 import os
-=======
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,11 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-$(475128!o!42gyy^z@h2vf-3*9b#xa#z2#+!t4twohjml+@@w'
-=======
-SECRET_KEY = 'django-insecure-52lue0y9rcbn)s#2m6v0ltusj#dq1!@m&um4#x)*mr7gm+vzi3'
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -46,13 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'users',
     'books',
     'user_auth',
     'core',
-=======
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 ]
 
 MIDDLEWARE = [
@@ -70,18 +60,11 @@ ROOT_URLCONF = 'bibtech.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-=======
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -122,11 +105,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-<<<<<<< HEAD
 AUTH_USER_MODEL = 'users.CustomUser'
 
-=======
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
@@ -144,15 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-<<<<<<< HEAD
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Meddia files (Images, Videos, etc.)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-=======
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -161,7 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 JAZZMIN_SETTINGS = {
-<<<<<<< HEAD
     "site_title": "BibTech",
     "site_header": "BibTech",
     "site_brand": "BibTech",
@@ -182,21 +158,12 @@ JAZZMIN_SETTINGS = {
     "show_sidebar": True,
     "navigation_expanded": True,
     "show_ui_builder": True,
-=======
-    'site_brand':"BibLib",
-    'copyright':"All Rights Reserved 2025",
-    "show_ui_builder":True
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
 }
 
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
     "footer_small_text": False,
-<<<<<<< HEAD
     "body_small_text": False,
-=======
-    "body_small_text": True,
->>>>>>> e1936e36113eaff7b78e011e0caa98a75778e8cf
     "brand_small_text": False,
     "brand_colour": False,
     "accent": "accent-primary",
