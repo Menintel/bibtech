@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to BibTech Library</h1>
+    <p>Your digital library management system</p>
+    <a href="{% url 'books:book_list' %}" class="btn">Browse Books</a>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h2>Manage Your Books</h2>
+        <p>Keep track of all your books in one place</p>
+    </div>
+    <div class="feature">
+        <h2>Discover New Titles</h2>
+        <p>Find new books to add to your collection</p>
+    </div>
+    <div class="feature">
+        <h2>Share with Friends</h2>
+        <p>Share your reading list with friends and family</p>
+    </div>
+</section>
+{% endblock %}
